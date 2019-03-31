@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      body {
+        background-color: lightblue;
+        display: flex;
+        flex-direction: row;
+      }
+      #container {
+        margin-top: 50px;
+        margin-left: 50px;
+      }
+      #shezhi {
+        font-size: 25px;
+        margin-left: 40px;
+      }
+      input {
+        margin: 10px;
+      }
+      label {
+        font-size: 20px;
+      }
+      #save {
+        margin-top: 10px;
+        margin-left: 40px;
+        height: 30px;
+        width: 60px;
+        outline: none;
+      }
+    </style>
+    <title>Form Test</title>
+  </head>
+  <body>
+    <div id="container">
+      <p id="shezhi">设置</p>
+      <input type="checkbox" id="upper" /><label for="checkbox"
+        >不显示大写</label
+      ><br />
+      <input type="checkbox" id="para" /><label for="checkbox">逐段显示</label
+      ><br />
+
+      <div id="status"></div>
+      <button id="save">Save</button>
+    </div>
+
+    <script src="option.js"></script>
+  </body>
+</html>

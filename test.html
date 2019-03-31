@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="popup.css" />
+    <link rel="stylesheet" type="text/css" href="search.css" />
+</head>
+
+<input type="text" id="test">
+<form class="form-wrapper cf">
+
+    <input type="text"  id="search_word" placeholder="Search here..." required>
+    <button type="button" id="search_btn">Search</button>
+</form>
+以下翻译来自<img src='002.gif'></img>
+<div id="status"></div>
+<img src="icon.png" id="bookmark" hidden="hidden" ></img>
+<p id="search_rec"></p>
+<p id="demo">Loading...</p>
+<script>
+    document.getElementById("search_btn").addEventListener('click',function(e){
+        console.log("aaa");
+        //  var key = e.which || e.keyCode;
+        if(e.KeyCode==13){
+            console.log("aaa");
+        }
+
+    })
+
+
+    document.getElementById("test").addEventListener('keypress',function(e){
+       // console.log("aaa");
+        var key = e.which || e.keyCode;
+        if(key==13){
+            console.log("aaa");
+        }
+
+    })
+</script>>
+<script type="text/javascript" src="popup.js"></script>
+<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+</body>
+</html>

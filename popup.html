@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>
+
+    </title>
+        <link rel="stylesheet" type="text/css" href="popup.css" />
+        <link rel="stylesheet" type="text/css" href="search.css" />
+        <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="stylesheet">
+    <style>
+        #container {
+            background-color: #fde4cd;
+        }
+        #search_btn {
+            background-color: rgb(245, 131, 10)
+        }
+        #search_word {
+            background-color: #faeee0
+        }
+        #zhichi {
+            display: inline-block;
+            color: #f32ea8;
+            margin-left: 10px;
+            font-family: 'Tangerine', cursive;
+            font-size: 20px;
+        }
+        #chaoyue {
+            margin-left: 50px;
+        }
+    </style>
+
+</head>
+
+<div id="container">
+    <form class="form-wrapper cf">
+        <input type="text" id="test" hidden="hidden">
+        <input type="text" id="search_word" placeholder="Search here..." required>
+        <button type="button" id="search_btn">Search</button>
+    </form>
+    <label id='zhichi'>Big Fans of :</label>
+      <img id="chaoyue" src='chaoyue.jpg'></img>
+    <div id="status"></div>
+    <img src="icon.png" id="bookmark" hidden="hidden"></img>
+    <p id="search_rec"></p>
+    <p id="demo">Loading...</p>
+</div>
+
+
+
+<script type="text/javascript" src="popup.js"></script>
+<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+</body>
+</html>
