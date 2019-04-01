@@ -108,6 +108,13 @@ chrome.tabs.query({
             if (username) {
 
                 document.getElementById("search_btn").addEventListener('click', function () {
+                    document.getElementById("chaoyue").style="height: 100px; margin-top: 10px";
+                    document.getElementById("chaoyue").src="./heart.jpg";
+                    setTimeout(function(){ 
+                        document.getElementById("chaoyue").style="";
+                        document.getElementById("chaoyue").src="./chaoyue.jpg";
+                     }, 1600);
+                    
                     search(username.value);
                 })
                 document.getElementById("search_word").addEventListener('keypress', function (e) {
