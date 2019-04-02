@@ -11,15 +11,15 @@
         "storage"
     ],
     "background":{
-        "script":["popup.js","pdf.js"]},
+        "script":["js/popup.js","js/pdf.js"]},
 
     "content_scripts":[{
         "matches":["http://*/*","https://*/*","file:///*"],
-        "js":["jquery-2.1.1.min.js","content.js"]
+        "js":["js/jquery-2.1.1.min.js","js/content.js"]
 
     }],
     "browser_action":{
-        "default_icon":"icon.png",
+        "default_icon":"asset/icon.png",
         "default_popup":"popup.html"
     }
 }
