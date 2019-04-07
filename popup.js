@@ -3,6 +3,10 @@ var request = new XMLHttpRequest();
 var request_2 = new XMLHttpRequest();
 //url=window.location.href;
 
+$(document).ready(function() {
+  $("#chaoyue").gifplayer("stop");
+});
+
 //def函数的用途是在接收到后台返回的用户不认识的单词，将单词变成按钮的形式在popup.html展示出来
 function def(abc, ghi, jkl, rst, uvw) {
   abc.addEventListener(
@@ -30,10 +34,11 @@ function def(abc, ghi, jkl, rst, uvw) {
 
   abc.addEventListener("click", function() {
     //  console.log(uvw);
+    $("#chaoyue").gifplayer();
     uvw.load();
     uvw.pause();
     uvw.play();
-
+    setTimeout($("#chaoyue").gifplayer("stop"), 1100);
     //    uvw.stop();
     //uvw.src=uvw.src;
   });
@@ -67,9 +72,11 @@ function def_2(abc, ghi, jkl, opq, rst) {
   );
 
   abc.addEventListener("click", function() {
+    $("#chaoyue").gifplayer();
     rst.load();
     rst.pause();
     rst.play();
+    setTimeout($("#chaoyue").gifplayer("stop"), 1100);
 
     //  rst.stop();
   });
