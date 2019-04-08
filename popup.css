@@ -1,4 +1,7 @@
-﻿body {
+﻿html{
+    background-color: #fde4cd;
+}
+body {
 	width: 312px;
 }
 table {
@@ -21,17 +24,17 @@ td.item-name{
 	text-overflow:ellipsis;
 }
 .a-btn{
-    width: 330px;
+    width: 312px;
     -webkit-border-radius:8px;
     -moz-border-radius:20px;
     border-radius:8px;
     padding:3px 10px 3px 3px;
     position:relative;
-    left:-50px;
+    left:-41px;
     float:left;
     display:block;
     overflow:hidden;
-    margin:0px 30px 0px 1px;
+    margin:5px 30px 0px 1px;
     background-color: white;
     opacity:1;
 }
@@ -42,6 +45,7 @@ td.item-name{
     text-align: left;
     font-size:21px;
     color:#555;
+    margin: 5px 0 0 10px;
     line-height:16px;
     font-weight:bold;
     font-family:"Myriad Pro", "Trebuchet MS", sans-serif;
